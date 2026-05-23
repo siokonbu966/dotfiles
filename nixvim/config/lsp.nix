@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  programs.nixvim.extraConfigLua = ''
+  extraConfigLua = ''
     local lsp = vim.lsp
 
     lsp.config("clangd", {})

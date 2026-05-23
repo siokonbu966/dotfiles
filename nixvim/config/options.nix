@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  programs.nixvim.options = {
+  opts = {
     relativenumber = true;
     wrap = false;
     autoindent = true;
@@ -11,8 +11,9 @@
     expandtab = true;
     softtabstop = -1;
     conceallevel = 0;
-    clipboard = "unnamedplus";
     termguicolors = true;
     completeopt = [ "menu" "menuone" "noinsert" ];
   };
+
+  clipboard.register = "unnamedplus";
 }

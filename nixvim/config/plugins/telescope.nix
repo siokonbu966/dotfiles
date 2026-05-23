@@ -1,19 +1,15 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
-    telescope-nvim
-    plenary-nvim
-  ];
-
-  programs.nixvim.extraConfigLua = ''
-    require("telescope").setup({
+  plugins.telescope = {
+    enable = true;
+    settings = {
       defaults = {
-        file_ignore_patterns = {
-          "node_modules/*",
-          ".git/*",
-        },
-      },
-    })
-  '';
+        file_ignore_patterns = [
+          "node_modules/*"
+          ".git/*"
+        ];
+      };
+    };
+  };
 }

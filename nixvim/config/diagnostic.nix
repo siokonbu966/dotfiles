@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  programs.nixvim.extraConfigLua = ''
+  extraConfigLua = ''
     vim.diagnostic.handlers["my/notify"] = {
       show = function(namespace, bufnr, diagnostics, opts)
         local level = opts["my/notify"].log_level
