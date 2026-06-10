@@ -1,11 +1,1 @@
--- install lazy
-require("config.lazy")
-
--- default option
-require("config.option")
-
--- keymap config
-require("config.keybind")
-
--- lsp server
-require("config.lsp")
+/nix/store/g8z7hw26nn3qb1h0gmxs3ki9j4s1ll2s-home-manager-files/.config/nvim/init.lua
