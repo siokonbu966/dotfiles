@@ -1,0 +1,184 @@
+keymap:
+- application:
+    only:
+    - steam_app_4274141638
+  name: steam-mouse
+  remap:
+    BTN_BACK: l
+    BTN_EXTRA: m
+    BTN_FORWARD: m
+    BTN_SIDE: l
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  name: L1
+  remap:
+    Insert-Comma: Dot
+    Insert-a: '5'
+    Insert-b: Semicolon
+    Insert-c: '8'
+    Insert-d: Shift-1
+    Insert-e: '0'
+    Insert-f: '3'
+    Insert-g: Shift-Minus
+    Insert-h: Slash
+    Insert-i: '4'
+    Insert-j: Shift-Semicolon
+    Insert-k: Shift-6
+    Insert-l: '1'
+    Insert-m: Shift-Slash
+    Insert-n: Minus
+    Insert-o: '6'
+    Insert-p: Shift-5
+    Insert-q: Shift-Grave
+    Insert-r: Equal
+    Insert-s: Kpasterisk
+    Insert-t: Shift-Equal
+    Insert-u: '2'
+    Insert-v: '9'
+    Insert-w: Shift-Comma
+    Insert-x: '7'
+    Insert-y: Shift-dot
+    Insert-z: SHIFT-4
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  name: L2
+  remap:
+    ScrollLock-Comma: Shift-BackSlash
+    ScrollLock-LeftBrace: CapsLock
+    ScrollLock-Minus: Shift-7
+    ScrollLock-a: Apostrophe
+    ScrollLock-c: Grave
+    ScrollLock-d: PreviousSong
+    ScrollLock-e: Shift-3
+    ScrollLock-f: RightBrace
+    ScrollLock-g: VolumeDown
+    ScrollLock-i: Shift-9
+    ScrollLock-j: NextSong
+    ScrollLock-k: VolumeUp
+    ScrollLock-l: LeftBrace
+    ScrollLock-m: StopCD
+    ScrollLock-n: Down
+    ScrollLock-o: Shift-0
+    ScrollLock-q: Shift-2
+    ScrollLock-r: Up
+    ScrollLock-s: Right
+    ScrollLock-t: Left
+    ScrollLock-u: Shift-Apostrophe
+    ScrollLock-v: Shift-RightBrace
+    ScrollLock-w: Esc
+    ScrollLock-x: Shift-LeftBrace
+    ScrollLock-z: BackSlash
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  name: other
+  remap:
+    Kp0: Shift-Equal
+    Menu-c: C-Space
+    Menu-m: C-BackSlash
+modmap:
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  name: default
+  remap:
+    Apostrophe: h
+    CapsLock: q
+    Comma: d
+    Dot: m
+    Semicolon: s
+    Shift_L: z
+    Slash:
+      alone: j
+      free_hold: true
+      held: Menu
+    a: e
+    b: Alt_R
+    c: v
+    d: a
+    e: u
+    f: o
+    g: Minus
+    h: Shift_L
+    i: w
+    j: k
+    k: t
+    l: n
+    m: g
+    n: Ctrl_L
+    o: r
+    p: y
+    r: f
+    s: i
+    t: Kp0
+    v: Comma
+    w: l
+    x: c
+    z:
+      alone: x
+      free_hold: true
+      held: Menu
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  device:
+    only:
+    - Keychron Keychron K2
+  name: JIS
+  remap:
+    Backslash: p
+    Henkan:
+      alone: Space
+      free_hold: true
+      held: ScrollLock
+    Muhenkan: Enter
+    RO: b
+    Space:
+      alone: Backspace
+      free_hold: true
+      held: Insert
+- application:
+    not:
+    - steam_app_2777057993
+    - steam_app_4274141638
+    - steam_app_3241660
+  device:
+    only:
+    - Keychron Keychron Receiver Keyboard
+    - Keychron B1 Pro Keyboard
+    - NuPhy NuPhy Air60 V2 Keyboard
+    - Nordic Semiconductor NuPhy Air60 V2 Dongle Keyboard
+    - Nordic Semiconductor NuPhy Air60 V2 Dongle
+  name: US
+  remap:
+    Alt_L:
+      alone: Enter
+      free_hold: true
+      held: Alt_L
+    Alt_R:
+      alone: Space
+      free_hold: true
+      held: ScrollLock
+    Delete: Print
+    Enter: p
+    Shift_R: b
+    Space:
+      alone: Backspace
+      free_hold: true
+      held: Insert
+virtual_modifiers:
+- Insert
+- ScrollLock
+- Menu
